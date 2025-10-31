@@ -1,0 +1,105 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar  {
+  width: 100vw;
+  height: 100px;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  border-radius: 0;
+}
+
+.hover-card {
+  height: 400px;
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.hover-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+@keyframes fadeScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-heading {
+  animation: fadeScale 1s ease-in-out forwards;
+}
+
+.caption-style {
+  font-size: 1.2rem;
+  animation: fadeIn 1.5s ease-in-out;
+  color: #6c757d;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.hover-card:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.footer {
+  min-height: auto; 
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+
+
+
+/* .hero-wrapper {
+  position: relative;
+  perspective: 1000px;
+  padding: 10px 0px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.hero-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url('https://img.freepik.com/premium-photo/set-food-from-meat-fish-salads-black-background-top-view-assortment-healthy-food_187166-48123.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(8px);
+  transform: scale(1.1); 
+  opacity: 0.6; 
+  z-index: -1;
+} */
