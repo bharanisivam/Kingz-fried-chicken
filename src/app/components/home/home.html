@@ -1,72 +1,25 @@
-<!-- <div class="container-fluid p-0">
-  <nav class="navbar navbar-light bg-light justify-content-between w-100 px-4 shadow-sm sticky-top">
-    <h1 class="text-dark fw-bold animate-heading m-0">Kingz Fried Chicken</h1>
-    <form class="form-inline d-flex m-0" (ngSubmit)="onSearch()">
-      <input class="form-control me-2" type="search" placeholder="Search" [(ngModel)]="searchTerm" name="search"
-        aria-label="Search" />
-      <button class="btn btn-outline-success" type="submit">Search</button>
-    </form>
-  </nav>
-
-  <div class="hero-banner text-white text-center d-flex align-items-center justify-content-center"
-    style="background: url('https://img.freepik.com/premium-photo/background-cooking-cutlery-vegetables-wooden-surface-top-view-free-space-your-text_187166-11030.jpg?w=2000') center/cover no-repeat; height: 300px;">
-    <div>
-      <h2 class="fw-bold">Welcome to Kingz Fried Chicken</h2>
-      <p>Deliciously crispy, always fresh!</p>
-      <a class="btn btn-warning mt-2" routerLink="/main-course">Explore Main Menu</a>
-    </div>
-  </div>
-
-
-  <div class="hero-wrapper">
-    <div class="container mt-4">
-      <div class="mt-1 row row-cols-1 row-cols-md-3 g-4">
-        <div class="col" *ngFor="let item of filteredMenuItems()">
-          <div class="card h-100 shadow-sm hover-card" (click)="navigateTo(item.route)" style="cursor: pointer;">
-            <img [src]="item.image" class="card-img-top" [alt]="item.title" />
-            <div class="card-body">
-              <h5 class="card-title text-center fw-bold">{{ item.title }}</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer mt-5 p-4 bg-light rounded shadow-sm">
-        <h3 class="text-center fw-bold text-dark mb-3">Contact Us</h3>
-        <p class="text-center mb-1"><strong>Phone:</strong> +91 77097 92538</p>
-        <p class="text-center mb-1"><strong>Email:</strong> farookfarookking@gmail.com</p>
-        <p class="text-center">
-          <strong>Address:</strong> Opp to RKV mahal, Steel plant road, JagirAmmapalayam, Salem
-        </p>
-      </div>
-    </div>
-  </div>
-
-</div> -->
-
 <div class="container-fluid p-0">
-  <nav class="navbar navbar-light bg-light justify-content-between w-100 px-4 shadow-sm sticky-top">
-    <h1 class="text-dark fw-bold animate-heading m-0">Kingz Fried Chicken</h1>
+  <nav class="navbar navbar-light bg-light justify-content-between w-100 px-3 px-sm-4 shadow-sm sticky-top">
+    <h1 class="text-dark fw-bold animate-heading m-0 fs-4 fs-md-2">Kingz Fried Chicken</h1>
     <form class="form-inline d-flex m-0" (ngSubmit)="onSearch()">
-      <input class="form-control me-2" type="search" placeholder="Search" [(ngModel)]="searchTerm" name="search"
-        aria-label="Search" />
-      <button class="btn btn-outline-success" type="submit">Search</button>
+      <input class="form-control me-2" type="search" placeholder="Search" [(ngModel)]="searchTerm" name="search" aria-label="Search" />
+      <button class="btn btn-outline-success px-3 py-2 text-nowrap" type="submit">Search</button>
     </form>
   </nav>
 
   <div class="hero-banner text-white text-center d-flex align-items-center justify-content-center"
     style="background: url('https://img.freepik.com/premium-photo/background-cooking-cutlery-vegetables-wooden-surface-top-view-free-space-your-text_187166-11030.jpg?w=2000') center/cover no-repeat; height: 300px;">
     <div>
-      <h2 class="fw-bold display-4">Welcome to Kingz Fried Chicken</h2>
+      <h2 class="fw-bold display-4 fs-4 fs-md-2">Welcome to Kingz Fried Chicken</h2>
       <p class="lead">Deliciously crispy, always fresh!</p>
-      <a class="btn btn-warning mt-2 px-4 py-2 fw-semibold" routerLink="/main-course">Explore Main Menu</a>
+      <a class="btn btn-warning mt-2 px-4 py-2 fw-semibold text-nowrap" routerLink="/main-course">Explore Main Menu</a>
     </div>
   </div>
 
   <div class="hero-wrapper">
-    <div class="container mt-5">
-      <h2 class="text-center fw-bold mb-4">Our Menu</h2>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="container mt-5 px-3 px-sm-4">
+      <h2 class="text-center fw-bold mb-4 fs-4 fs-md-2">Our Menu</h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
         <div class="col" *ngFor="let item of filteredMenuItems()">
           <div class="card h-100 shadow-sm hover-card" (click)="navigateTo(item.route)" style="cursor: pointer;">
             <img [src]="item.image" class="card-img-top" [alt]="item.title" loading="lazy" />
@@ -80,7 +33,7 @@
   </div>
 
   <footer class="footer bg-dark text-white py-3 mt-5 w-100">
-    <div class="container text-center">
+    <div class="container text-center px-3 px-sm-4">
       <h5 class="fw-bold mt-0 mb-2">Contact Us</h5>
       <p class="mb-1"><strong>Phone:</strong> +91 77097 92538</p>
       <p class="mb-1"><strong>Email:</strong><a href=""> farookfarookking@gmail.com</a></p>

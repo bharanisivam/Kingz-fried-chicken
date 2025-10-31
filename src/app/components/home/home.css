@@ -3,20 +3,18 @@ body, html {
   padding: 0;
 }
 
-.navbar  {
+.navbar {
   width: 100vw;
-  height: 100px;
-  margin: 0;
+  height: auto;
   padding: 0.5rem 1rem;
   box-sizing: border-box;
   border-radius: 0;
 }
 
 .hover-card {
-  height: 400px;
-  width: 280px;
+  height: auto;
+  width: 100%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
   display: flex;
   flex-direction: column;
 }
@@ -64,42 +62,8 @@ body, html {
   }
 }
 
-
-.hover-card:hover {
-  transform: scale(1.03);
-  transition: transform 0.3s ease;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-}
-
 .footer {
-  min-height: auto; 
+  font-size: 0.95rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  font-size: 0.95rem;
 }
-
-
-
-
-/* .hero-wrapper {
-  position: relative;
-  perspective: 1000px;
-  padding: 10px 0px;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.hero-wrapper::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background-image: url('https://img.freepik.com/premium-photo/set-food-from-meat-fish-salads-black-background-top-view-assortment-healthy-food_187166-48123.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  filter: blur(8px);
-  transform: scale(1.1); 
-  opacity: 0.6; 
-  z-index: -1;
-} */
