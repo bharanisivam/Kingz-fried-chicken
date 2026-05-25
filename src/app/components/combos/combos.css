@@ -1,0 +1,43 @@
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-section {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 40px 20px;
+}
+
+.menu-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e0e0e0;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.menu-card h5 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.menu-card p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.price-tag {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}

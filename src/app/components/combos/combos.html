@@ -1,0 +1,47 @@
+<!-- <section class="menu-section">
+        <h2 class="text-center">COMBO OFFERS</h2>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="menu-card h-100">
+                        <p><strong>KINGZ SINGLE COMBO</strong></p>
+                        <p>Chicken Burger + Chicken Shots + Mojito - ₹199</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="menu-card h-100">
+                        <p><strong>KINGZ COUPLE COMBO</strong></p>
+                        <p>Chicken Mini Burgers + Chicken Lollipop + Chicken Momos + Mojito - ₹299</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 mt-2">
+                <div class="col-md-6">
+                    <div class="menu-card h-100">
+                        <p><strong>KINGZ COMBO</strong></p>
+                        <p>Chicken Burger + BBQ Chicken Lollipop + Mojito - ₹299</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="menu-card h-100">
+                        <p><strong>KINGZ ALL IN COMBO</strong></p>
+                        <p>Fried Chicken Lollipop + BBQ Chicken Lollipop + French Fries + Mojito - ₹399</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+<section class="menu-section py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center text-danger fw-bold mb-4">COMBO OFFERS</h2>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-6" *ngFor="let combo of comboOffers">
+        <div class="menu-card h-100 shadow-sm p-4">
+          <h5 class="fw-bold text-primary">{{ combo.title }}</h5>
+          <p class="text-muted">{{ combo.description }}</p>
+          <div class="price-tag text-end text-success fw-bold">₹{{ combo.price }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

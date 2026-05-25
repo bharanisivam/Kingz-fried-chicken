@@ -1,0 +1,63 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-section {
+  margin: 30px 0;
+}
+
+.menu-img {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  width: 100%;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.card {
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #dc3545;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .menu-img {
+    height: 150px;
+  }
+}
